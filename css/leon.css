@@ -1,0 +1,517 @@
+/* stars variables */
+
+/* end variables  */
+/* globale rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #FFF6ED;
+    font-family: 'Work Sans', sans-serif}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 767px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* finish globale rules */
+/* header  */
+.header{
+    background-color: #0d0e27;
+    padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 50px;;
+}
+.header .links{
+    position: relative;
+    cursor: pointer;
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+    background-color: #FC881D;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span:first-child{
+        width: 100%;
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+.header .links .icon span:last-child{
+    width: 100%;
+}
+.header .links ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+}
+.header .links:hover ul {
+    display: block;
+}  
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+
+}
+.presentation {
+    background-color: #0d0e27;
+    width: 100%;
+    height: 500px;
+}
+.presentation .intro-text  {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 680px;
+    max-width: 100%;
+}
+.presentation .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FC881D;
+    text-align: center;
+
+}
+.presentation .intro-text p {
+    font-size: 20px;
+    line-height: 2;
+    color: #FFF6ED;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+}
+/* e presentation  */
+.intro-svg {
+    transform: rotate(-180deg);
+    margin-top: -1px;
+}
+.intro-svg path {
+    fill: #0d0e27 ;
+}
+@media (min-width: 767px){
+    .sport{
+        text-align: center;
+    }
+}
+.sport h1{
+    font-size: 7em;
+    color: #0d0e27;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .sport h1{
+        font-size: 5em;
+    }
+}
+.sport .container {
+    display: grid;
+    margin-top: 57px;
+    grid-template-columns: repeat(auto-fill , minmax(235px, 1fr));
+}
+.sport .container .fifa{
+    width: 100%;    
+    background-color: #fff;
+    border-right: 5px solid snow;
+}
+.sport .container .fifa .fi{
+    width: 100%;
+    height: 50%;
+}
+.sport .container .fifa h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.sport .container .fifa h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.sport .container .forza {
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+
+}
+.sport .container .forza h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.sport .container .forza .fo {
+    width: 100.5%;
+    height: 50%;
+}
+.sport .container .forza h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.sport .container .manager{
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+
+
+}
+.sport .container .manager h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.sport .container .manager h3{
+    color: red;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.sport .container .manager .m {
+    width: 100%;
+    height: 50%;
+}
+.sport .container .crab{
+    background-color:#fff;
+    width: 100%;;
+}
+.sport .container .crab .c {
+    width: 100%;
+    height: 50%;
+}
+.sport .container .crab h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.sport .container .crab h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+@media (min-width: 767px){
+    .action{
+        text-align: center;
+    }
+}
+.action h1{
+    font-size: 7em;
+    color: #0d0e27;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .action h1{
+        font-size: 5em;
+    }
+}
+.action .container {
+    display: grid;
+    margin-top: 57px;
+    grid-template-columns: repeat(auto-fill , minmax(235px, 1fr));
+}
+.action .container .hitman{
+    width: 100%;    
+    background-color: #fff;
+    border-right: 5px solid snow;
+}
+.action .container .hitman .h{
+    width: 100%;
+    height: 50%;
+}
+.action .container .hitman h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.action .container .hitman h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.action .container .god {
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+
+}
+.action .container .god .g {
+    width: 100.5%;
+    height: 50%;
+}
+.action .container .god h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.action .container .god h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.action .container .dead{
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+}
+.action .container .dead .d {
+    width: 100%;
+    height: 50%;
+}
+.action .container .dead h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.action .container .dead h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.action .container .red{
+    background-color:#fff;
+    width: 100%;;
+}
+.action .container .red .r {
+    width: 100%;
+    height: 50%;
+}
+.action .container .red h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.action .container .red h3{
+    color: red;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+@media (min-width: 767px){
+    .horror{
+        text-align: center;
+    }
+}
+.horror h1{
+    font-size: 7em;
+    color: #0d0e27;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .horror h1{
+        font-size: 5em;
+    }
+}
+.horror .container {
+    display: grid;
+    margin-top: 57px;
+    grid-template-columns: repeat(auto-fill , minmax(235px, 1fr));
+}
+.horror .container .hidden{
+    width: 100%;    
+    background-color: #fff;
+    border-right: 5px solid snow;
+}
+.horror .container .hidden .hid{
+    width: 100%;
+    height: 50%;
+}
+.horror .container .hidden h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.horror .container .hidden h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.horror .container .gnosia {
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+
+}
+.horror .container .gnosia .gno {
+    width: 100.5%;
+    height: 50%;
+}
+.horror .container .gnosia h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.horror .container .gnosia h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.horror .container .gtfo{
+    width: 100%;
+    background-color:#fff;
+    border-right: 5px solid snow;
+}
+.horror .container .gtfo .gtf {
+    width: 100%;
+    height: 50%;
+}
+.horror .container .gtfo h2{
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.horror .container .gtfo h3{
+    color: red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.horror .container .strange{
+    background-color:#fff;
+    width: 100%;;
+}
+.horror .container .strange .str {
+    width: 100%;
+    height: 50%;
+}
+.horror .container .strange h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #0d0e27;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.horror .container .strange h3{
+    color: red;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.footer .container {
+    display: flex;   
+    margin-top: 40px;
+}
+.footer .container h1{
+    color: #FC881D;
+    margin-left: 0px;
+}
+
+@media (max-width: 767px) {
+    .footer h1{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+.footer .container .facebook .fb{
+    margin-right: 20px;
+    height: 30px;
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.footer .container .instagram .insta{
+    width: 30px;
+    height: 30px;
+    margin-top: 23px;
+}
+
+.footer .container .twitter .tw{
+    width: 30px;
+    height: 30px;
+    margin-top: 23px;
+    margin-left: 20px;
+}
